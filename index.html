@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Blessing</title>
+  <link rel="stylesheet" type="text/css" href="CSS/main.css">
+  <link rel="stylesheet" type="text/css" href="CSS/less800px.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+	<div id="outer-container">
+		
+		<div id="flexbox">
+		
+			<div id="topdiv">
+				<p id="mainquote">“To every thing there is a season, and a time to every purpose under the heaven” Ecclesiastes 3:1</p>
+			</div>
+			
+			<header id="header">
+					<div id="logo-contain"><img id="logo" src="Logo\Logo\logo-350px.png"></div>
+					<div id="title-contain">
+						<p id="title">Blessing Life Coaching</p>
+						<p id="subheading">"Helping you to discover your purpose and reach your potential”</p>
+					</div>
+					<div id="blessing-pic-contain"><img id="blessing-pic" src="blessing-pics/profile-pics/blessing-350px.jpg"></div>	
+			</header>
+					
+			<nav id="nav">
+				<ul id="main-list">
+					<li id="home" class="list-item"><a class="link-item" href="#">HOME</a></li>
+					<li id="services" class="list-item"><a class="link-item" href="#">SERVICES
+						<div id="arrow-contain">
+							<img id="service-down" src="icons/navarrow20px.png">
+							<img id="service-up" src="icons/navarrowup20px.png">
+						</div></a>
+							
+						<ul id="sub-nav">
+							<li  id="life-coach" class="drop-down"><a class="drop-down-links" href="#">SPIRITUAL LIFE-COACHING</a></li>
+							<li  id="goal-setting" class="drop-down"><a class="drop-down-links" href="#">GOAL-SETTING</a></li>
+							<li  id="speaking" class="drop-down"><a class="drop-down-links" href="#">SPEAKING</a></li>
+						</ul>					
+					</li>
+					<li id="resources" class="list-item"><a class="link-item" href="#">RESOURCES</a></li>
+					<li id="contact" class="list-item"><a class="link-item" href="#">CONTACT</a></li>
+				</ul>
+				<div id="menu-collapse">
+					<img id="menu-icon" src="icons/menu-arrow.png">
+				</div>
+			</nav>
+			
+			
+			<div id="aside">
+				<div id="aside-content">
+					<p id="aside-title">About Me</p></br>
+					<p id="aside-content">I am a Preacher, Teacher, Coach, Author and Speaker who regularly delivers seminars on discovering and fulfilling purpose. I coach people from all walks of life to discover their purpose and achieve their potential. I regularly run Goal Setting Workshops in Schools, Colleges, Youth Clubs, Churches, Prisons and Hospitals.</br></br>I bring a wealth of international experience from governmental and educational institutions, having worked at the Commonwealth Secretariat, Charity Commission and City University London.</br></br>I am currently studying Theology at the London School of Theology. I have a degree in Philosophy and Politics from Exeter University and a Master's degree in Development Studies from the School of Oriental and African Studies, London.</br></br>I am married and live in London, UK.</p>
+				</div>
+			</div>
+			
+			<div id="main">
+				<div id="main-section">
+					<p id="main-title">Welcome!</p></br> 
+					<p id="main-content">I believe that each of us is born with potential and have a specific mission in life to fulfil. Sadly, not many people ever discover their purpose or realise that potential.</br></br> Because you are viewing this website I believe that there is a deep hunger in you that says there must be more. There must be more than what you already have, there must be more to you than you already are, there must be more places to go than you have already been. I hear you say that there must be more to life than this.</br></br>I want you to know that there is, and that is why I have been created, my purpose is to help you to discover your purpose and reach your potential.</br></br>If you do not know why you have been created, I would encourage you to take some time out and sit and really ask God, “why am I here, what have been born to do”.</br></br>If you will do this, for the next 30 days, the answer will astound you. Once you know your purpose, do something every single day that will move you towards the attainment of that desired outcome.</br></br>If you do, I can assure you that you will enjoy a greater sense of fulfilment and you will live a life of purpose.</br></br> There are a range of events and books that we offer you to empower you on your journey to discovery. I hope you will decide to invest in yourself by making good use of them.</br></br>I pray that you will live a life of meaning and purpose.</br></br>With love,</br></br><span id="blessing-sig">Blessing Theophilus-Israel</span></p>			
+				</div>
+			</div>
+			
+			<div id="footer">
+				<div id="footer-section">
+						<img id="twitter" class="soc-icon" src="Icons\Social Media\Twitter-48px.png">
+						<img id="facebook" class="soc-icon" src="Icons\Social Media\facebook-48px.png">
+						<img id="instagram" class="soc-icon" src="Icons\Social Media\instagram-48px.png">
+						<img id="linkedin" class="soc-icon" src="Icons\Social Media\linkedin-48px.png">
+				</div>	
+			</div>
+		</div>
+		
+	</div>	
+		
+	<script>
+			
+	$('#menu-icon').on('click', function(){
+		$('#menu-icon').toggleClass('rotatedown');
+			}
+			);
+    
+    $('#services').click(function() {
+		$('#sub-nav').slideToggle(400, "swing");
+		$('#resources').toggleClass('removepadding');
+		$('#service-up').toggle();
+		$('#service-down').toggle();
+			});
+			
+	$( "#menu-icon" ).click(function() {
+		$( "#main-list" ).slideToggle(400, "swing");
+			});
+			
+			$( "#menu-icon" ).click(function() {
+		$( "p" ).toggle(400, "swing");
+			});
+			
+			
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,398 @@
+html{font-size:1rem;}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding:0px;
+  font-family:blessing-bold;
+  font-size:16px;
+  }
+
+@font-face {
+    font-family: blessing-bold;
+    src: url(fonts/Bold.ttf);}
+@font-face {
+    font-family: blessing-bold-italic;
+    src: url(fonts/Bold-italic.ttf);}
+@font-face {
+    font-family: blessing-italic;
+    src: url(fonts/italic.ttf);}
+@font-face {
+    font-family: blessing-normal;
+    src: url(fonts/normal.ttf);}
+
+#outer-container{
+width:100%;
+height:100%;
+
+}
+
+#flexbox{
+margin-top:15px;
+display:flex;
+flex-flow:row wrap;
+align-items:flex-start;
+align-content:flex-start;
+width:85%;
+margin:0 auto;
+}
+
+#script{width:100%;
+margin-top:15px;
+}
+
+#header{
+display:flex;
+flex-flow:row wrap;
+align-items:flex-start;
+width:100%;
+box-shadow: 0px 8px 10px #C299AD;
+}
+
+#title{
+background-image:url(backgroundpattern.png);
+font-family:blessing-bold;
+font-size:3.75rem;
+background: -webkit-linear-gradient(top, #ccac00, #e6c200, #ffdf33, #ffdb1a);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+#logo-contain{width:20%;}
+
+#title-contain{width:60%;}
+
+#blessing-pic-contain{width:20%;
+}
+
+#blessing-pic{
+max-width:100%;
+padding:10px;
+border-radius:50%;
+}
+
+#title{text-align:center;}
+
+#subheading{text-align:center;}
+
+#logo{
+max-width:100%;
+padding:10px;
+}
+
+#subheading{
+font-family:blessing-bold-italic;
+font-size:1.75rem;
+background: -webkit-linear-gradient(top, #ccac00, #e6c200, #ffdf33, #ffdb1a);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;}
+
+#scripture{
+margin: 0 auto;
+font-size:1.15rem;
+text-align:center;
+font-family:blessing-italic;}
+
+#topdiv{
+width:100%;
+}
+
+#mainquote{
+font-size:1.2rem;
+text-align:center;
+padding: 10px 0px 10px 0px;}
+
+/*START OF NAVIGATION FORMATTING ---------------------------------------------------------*/
+
+#nav{width:100%;
+margin:10px 0px 10px 0px;}
+
+#main-list{
+display:block;
+width:100%;
+list-style:none;
+text-align:center;
+}
+
+.list-item{
+display:inline-block;
+padding:10px 20px	;
+text-decoration:none;
+}
+
+.link-item:hover{
+border-bottom:4px solid purple;
+}
+
+.link-item{
+padding-bottom:5px;
+text-decoration:none;
+color:#330066; 
+}
+
+#home, #services, #resources, #contact{border-right:2px dotted #97999C;}
+
+#services{
+position:relative
+}
+
+#arrow-contain{
+display:inline-block;
+margin-right:3px;}
+
+#service-down{height:16px;
+width:16px;}
+
+#service-up{height:16px;
+width:16px;
+display:none;}
+
+#sub-nav{
+width:220px;
+padding:0px 10px;
+margin-left:-75px;
+padding-bottom:5px;
+text-align:center;
+display:none;
+margin-top:10px;
+background-color:white;
+position:absolute;
+}
+
+.drop-down{
+list-style:none;
+display:block;
+text-align:center;
+margin-top:12px;
+}
+
+.drop-down-links{
+text-decoration:none;
+padding-bottom:5px;
+cursor:pointer;
+}
+
+.drop-down-links:hover{
+border-bottom:4px solid purple;
+}
+
+#menu-collapse{
+display:none;
+width:100%;
+background-color:orange;
+overflow:hidden;
+}
+
+#menu-icon{
+height:37px;
+width:37px;
+padding:5px;
+float:right;
+-webkit-transition: all 0.5s ease;
+}
+
+.rotatedown{
+-webkit-transform: rotate(180deg);
+}
+
+#aside{
+width:25%;
+align-self: stretch;
+padding:00px 10px 20px 20px;
+}
+
+#aside-title{
+font-size:1.25rem;
+padding:8px 0px 8px 8px;
+background: -webkit-linear-gradient(left, #C299AD, #983098);}
+
+#aside-content{
+line-height:1.25rem;
+font-size:1rem;
+padding-left:8px;}
+
+
+#main{
+width:75%;
+padding:0px 20px 20px 20px;
+align-self:stretch;
+}
+
+#main-section{
+max-width:100%;
+}
+
+#main-title{
+font-size:1.25rem;
+padding:8px 0px 8px 8px;
+background: -webkit-linear-gradient(left, #C299AD, #983098);
+}
+
+#main-content{
+line-height:1.25rem;
+font-size:1rem;
+padding-left:8px;}
+
+#blessing-sig{
+font-size:1.3rem;
+font-family:blessing-italic;}
+
+#footer{
+background: -webkit-linear-gradient(top, #ECCE76, #A26F14);
+width:100%;
+}
+
+#footer-section{
+display:inline-block;
+text-align:center;
+padding:5px;
+background-color:red;
+}
+
+.soc-icon{
+  height:35px;
+  width:35px;
+}
+
+/* CSS FOR CONTACT FORM -----------------------------------------------------------------------------*/
+#contact-aside{
+width:30%;
+}
+
+#contact-title{
+text-align:center;
+margin:10px 0px;
+font-size:1.25rem;
+font-family:blessing-bold-italic;
+}
+
+#contact-pic-contain{
+width:65%;
+margin:0 auto;
+}
+
+#contact-pic{
+max-width:100%;
+}
+
+#contact-main{
+width:70%;
+margin:0px auto;
+padding:25px;
+overflow:hidden;
+}
+
+#contact-text{
+line-height:1.25rem;
+text-align:justify;
+}
+
+form{
+width:65%;
+}
+
+.form-input, #text-box{
+outline: 0;
+box-shadow: none;
+}
+
+input:focus, #text-box:focus{
+border-bottom: 2px solid #A346D1;
+border-right: 2px solid #A346D1;
+}
+
+#form-header{
+font-family:blessing-bold-italic;
+font-size:1.5rem;
+margin-bottom:15px;
+}
+
+.form-field{
+width:100%;
+position:relative;
+overflow:auto;
+margin-top:5px;
+}
+
+.label{
+font-size:1.1rem;
+float:left;
+height:25px;
+position:absolute;
+bottom:0px;
+left:0px;
+}
+
+.form-input{
+font-size:1.1rem;
+padding-left:2px;
+float:right;
+width:65%;
+height:25px;
+}
+
+#service-header{
+height:auto;
+font-size:1.1rem;}
+
+.enquiry{
+font-size:1.1rem;
+}
+
+.options{
+margin-top:10px;
+}
+
+#text-box{
+width:100%;
+height:100px;
+margin-top:5px;
+}
+
+#submit{
+margin-top:10px;
+text-align:center;
+padding:10px 13px;
+}
+
+@media(max-width:1019px){
+
+#contact-main{
+padding:20px;
+}
+
+.form-input{
+width:100%;
+font-size:1rem;
+}
+
+.label{
+text-align:center;
+width:100%;
+position:relative;
+font-size:1rem;
+}
+
+.enquiry{
+width:100%;
+text-align:center;
+display:block;
+font-size:1rem;
+}
+
+#text-box{
+margin-top:-10px;
+}
+
+#service-header{
+font-size:1rem;
+}
+
+}
+
+
+
+
+
+
+
